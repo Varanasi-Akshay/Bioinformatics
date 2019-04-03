@@ -1,0 +1,38 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+```
+
+##Lab Worksheet 2
+
+We will be working with the `msleep` data set that is provided with ggplot2. The data set contains information about the sleep habits of 83 mammals. Enter `?msleep` on the R command line to learn more about the dataset.
+
+**Problem 1:** Make the following plots: (i) a plot of total time awake vs. body weight, colored by "vore" (carnivore, herbivore, etc.); (ii) a plot of body weight vs. brain weight, colored by "vore". When you plot body weight and/or brain weight, consider whether a linear scale or a logarithmic scale seems more appropriate, and explain your reasoning in 1-2 sentences. **HINT:** Use the functions `scale_x_log10()` and `scale_y_log10()` to change the scales.
+
+```{r}
+# your R code goes here
+head(msleep)
+ggplot(msleep,aes(x=bodywt,y=awake,color=vore))+geom_point()+scale_x_log10()#+scale_y_log10()
+ggplot(msleep,aes(x=brainwt,y=bodywt,color=vore))+geom_point()+scale_x_log10()+scale_y_log10()
+
+```
+
+Logarithmic scale seems more appropriate in second case because variables are exponentially related. In first case, only x axis need to be log scale as most of the values are close except few which are very far off. So to see the points which are plotted closely
+
+**Problem 2:** Explain the difference between `geom_line()` and `geom_path()`. Make up a simple data set (5-10 data points), plot it twice, once using `geom_line()` and once using `geom_path()`, and explain why each plot looks the way it does.
+
+*Your answer goes here.* 
+
+```{r}
+# your R code goes here
+dat<-data.frame(x=c(1,3,6,4,5),y=c(10,30,20,40,60))
+head(dat)
+ggplot(dat,aes(x=x,y=y))+geom_path() # same order in dataframe
+
+ggplot(dat,aes(x=x,y=y))+geom_line() #trends
+```
+geom_path() connects the observations in the order in which they appear in the data. geom_line() connects them in order of the variable on the x axis
+
+

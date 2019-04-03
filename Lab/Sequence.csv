@@ -1,0 +1,7 @@
+ "Position","Sequence 1","Sequence 2","Identical (y/n)" 
+1,A,A,y 
+2,T,T,y 
+3,C,G,n  
+4,G,A,n  
+5,T,G,n  
+6,A,A,y 

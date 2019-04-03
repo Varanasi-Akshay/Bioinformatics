@@ -1,0 +1,102 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align = "center", fig.height = 3, fig.width = 4)
+library(tidyverse)
+theme_set(theme_bw(base_size = 12))
+library(ggthemes)
+```
+## Lab Worksheet 6
+
+In 1898, Hermon Bumpus, an American biologist working at Brown University, collected data on one of the first examples of natural selection directly observed in nature. Immediately following a bad winter storm, he collected 136 English house sparrows, *Passer domesticus*, and brought them indoors. Of these birds, 64 had died during the storm, but 72 recovered and survived. By comparing measurements of physical traits, Bumpus demonstrated physical differences between the dead and living birds. He interpreted this finding as evidence for natural selection as a result of this storm:
+
+```{r}
+bumpus <- read_csv("http://wilkelab.org/classes/SDS348/data_sets/bumpus_full.csv")
+bumpus$Survival <- factor(bumpus$Survival)
+head(bumpus)
+```
+
+The data set has three categorical variables (`Sex`, with levels `Male` and `Female`, `Age`, with levels `Adult` and `Young`, and `Survival`, with levels `Alive` and `Dead`) and nine numerical variables that hold various aspects of the birds' anatomy, such as wingspread, weight, etc.
+
+**Problem 1:** *Make a logistic regression model that can predict survival status from all other predictor variables. (Include the categorical predictors `Sex` and `Age`.) Then do backwards selection, removing the predictors with the highest P value one by one, until you are only left with predictors that have P<0.1. How many and which predictors remain in the final model?*
+
+```{r}
+# logistic regression
+glm_out <-glm(
+  Survival ~ Sex + Age + Length + Wingspread + Weight + Skull_Length + Humerus_Length + Femur_Length + Tarsus_Length + Sternum_Length + Skull_Width,
+  data = bumpus,
+  family = binomial
+)
+
+summary(glm_out)
+
+
+```
+
+
+```{r}
+glm_out <-glm(
+  Survival ~ Sex + Length + Weight + Humerus_Length + Sternum_Length,
+  data = bumpus,
+  family = binomial
+)
+
+summary(glm_out)
+
+```
+
+5 Predictors which remain are Sex, Length, Weight and Humerus Length and Sternum Length. 
+
+**Problem 2:** *Make a plot of the fitted probability as a function of the linear predictor, colored by survival. Make a density plot that shows how the two outcomes are separated by the linear predictor. Interperet your plots in 1-2 sentences. If you had to choose a cut-off value for alive or dead, where would it be?*
+```{r}
+lr_data <- data.frame(
+predictor=glm_out$linear.predictors,
+prob=glm_out$fitted.values,
+Survival = bumpus$Survival
+)
+ggplot(lr_data, aes(x = predictor, y = prob, color = Survival)) +
+geom_point() +
+scale_color_colorblind()
+
+```
+
+```{r}
+
+cutoff <- 0
+alive_true <- sum(lr_data$predictor > cutoff & lr_data$Survival == "Alive")
+alive_false <- sum(lr_data$predictor <= cutoff & lr_data$Survival == "Dead")
+alive_true
+
+```
+
+
+```{r}
+ggplot(lr_data, aes(x = predictor, fill = Survival)) +
+geom_density(alpha = .5) +
+scale_fill_colorblind()
+```
+
+Seeing density plot we can see that those two are not clearly separated by linear predictor. Cut-off can be around 0.6 as below it there are both alive and dead points so that is not good to have cut-off below it. 
+
+**Problem 3:** *Add rugs to both the top and bottom of the plot above. **BONUS:** Add a curve for the logistic function. Explain how you created this curve in 1-2 sentences.*
+
+```{r}
+
+# extract alive and dead data
+alive_data <- filter(lr_data, Survival == "Alive")
+dead_data <- filter(lr_data, Survival == "Dead")
+
+# make data frame with logistic function
+predictor <- seq(min(lr_data$predictor),max(lr_data$predictor),0.1)
+prob <- exp(predictor)/(1 + exp(predictor))
+log_fun_data <- data.frame(predictor, prob)
+
+# plot
+ggplot(lr_data, aes(x = predictor, y = prob, color = Survival)) +
+geom_line(data = log_fun_data, color = "black") +
+geom_point() +
+geom_rug(data = alive_data, sides = 'b') +
+geom_rug(data = dead_data, sides = 't') +
+scale_color_colorblind()
+```
+
+Discussion here.

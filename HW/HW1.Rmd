@@ -1,0 +1,51 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=5, fig.width=10)
+```
+## Homework 1
+*Akshay Kumar Varanasi (av32826)*
+
+**This homework is due on Jan. 29, 2019 at 4:00 pm. Please submit as a pdf file on Canvas.**
+
+This homework uses the `ToothGrowth` dataset. This dataset is built into R, and it contains the lengths (`len`) of odontoblasts (cells responsible for tooth growth) in 60 quinea pigs. Each animal received one of the three dose levels (`dose`) of vitamin C in mg/day: 0.5, 1, or 2. Vitamin C was delivered either through orange juice or through ascorbic acid supplement (`supp`). 
+
+```{r}
+head(ToothGrowth)
+```
+
+**Problem 1: (4 pts)** We are interested in testing the effects of vitamin C on odontoblasts growths in guinea pigs. Since there are three different doses of vitamin C in the data set, and therefore three groups of length measurements, we will use an analysis of variance (ANOVA) test. Conduct an ANOVA test and interpret your results in 1-2 sentences. HINT: You will first need to create a linear model object using the `lm()` function before you can use the `anova()` function.
+
+```{r}
+fit<-lm(len~dose,data=ToothGrowth)
+anova(fit)
+```
+Since the P-value is very less, we can reject the Null hypothesis and conclude that length of odontoblasts differs significantly based on dosage.
+
+**Problem 2: (3 pts)** Create a boxplot of the teeth growth, separated by vitamin C doses. Based on this plot, do you expect the mean length of odontoblasts for the 2 mg/day dose to be the same or different than the mean length of odontoblasts for the 0.5 mg/day dose? Explain your answer.
+
+```{r}
+# dose_0.5<-ToothGrowth$len[ToothGrowth$dose=='0.5']
+# dose_1<-ToothGrowth$len[ToothGrowth$dose=='1']
+# dose_2<-ToothGrowth$len[ToothGrowth$dose=='2']
+# boxplot(dose_0.5,dose_1,dose_2,names = c('0.5 mg/day','1 mg/day','2 mg/day'))
+# 
+
+boxplot(ToothGrowth$len ~ ToothGrowth$dose,ylab="Length of odontoblasts (cm)")
+```
+Similar to the anova results, the length differs significantly based on dosage and therefore also its mean.
+
+**Problem 3: (3 pts)** Use a t test to determine if the mean length of odontoblasts for the 2 mg/day dose is the same as or different from the mean length of odontoblasts for 0.5 mg/day. Interperet and explain your results in 1-2 sentences.
+
+```{r}
+
+dose_0.5<-ToothGrowth$len[ToothGrowth$dose=='0.5']
+dose_1<-ToothGrowth$len[ToothGrowth$dose=='1']
+dose_2<-ToothGrowth$len[ToothGrowth$dose=='2']
+t.test(dose_0.5,dose_2)
+```
+T-test reassures our above findings that the means are different as P-value is very low

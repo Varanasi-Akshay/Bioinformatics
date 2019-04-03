@@ -1,0 +1,183 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+```
+## In-class worksheet 4
+**Jan 31, 2019**
+
+We will again be working with the ggplot2 package, so we need to load it:
+```{r}
+library(ggplot2) # load ggplot2 library
+theme_set(theme_bw(base_size = 12)) # set the default plot theme for the ggplot2 library
+```
+
+## 1. Bar plots
+
+
+The `bacteria` data set contains data from tests of the presence of the bacterium *H. influenzae* in children with otitis media in the Northern Territory of Australia. We are interested in two columns of this data set: `presence` reports the presence (`y`) or absence (`n`) of the bacterium. `treatment` reports the treatment, which was `placebo`, `drug`, or `drug+` (drug plus high adherence).
+```{r }
+# download the bacteria data set:
+bacteria <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/bacteria.csv")
+head(bacteria)
+```
+
+Using `geom_bar()`, make a bar plot that shows the absolute number of cases with or without the bacterium, stacked on top of each other, for each treatment.
+```{r }
+ggplot(bacteria, 
+       aes(x = treatment,
+           fill = presence
+       )
+    ) +
+  geom_bar()
+```
+
+Now modify the plot so that bars representing the absolute number of cases with or without the bacterium are shown side-by-side. Hint: This requires the argument `position='dodge'` in `geom_bar()`.
+```{r }
+
+ggplot(bacteria, 
+       aes(x = treatment,
+           fill = presence
+       )
+    ) +
+  geom_bar(position = 'dodge')
+```
+
+Now modify the plot so that bars represent the relative number of cases with or without the bacterium. What is the appropriate `position` option in `geom_bar()` to achieve this effect?
+```{r }
+
+ggplot(bacteria, 
+       aes(x = treatment,
+           fill = presence
+       )
+    ) +
+  geom_bar(position = 'fill')
+```
+
+## 2. Histograms and density plots
+
+Make a histogram plot of sepal lengths in the `iris` data set, using the default histogram settings. Then make two more such plots, with different bin widths. Use `geom_histogram()`
+```{r }
+head(iris)
+ggplot(iris,
+       aes(x = Sepal.Length,
+           fill = Species
+        )
+  ) + geom_histogram()
+
+ggplot(iris,
+       aes(x = Sepal.Length,
+           fill = Species
+        )
+  ) + geom_histogram(binwidth = 0.2)
+
+
+ggplot(iris,
+       aes(x = Sepal.Length,
+           fill = Species
+        )
+  ) + geom_histogram(binwidth = 0.03)
+
+```
+
+Instead of `geom_histogram()`, now use `geom_density()` and fill the area under the curves by species identity.
+```{r}
+ggplot(iris,
+       aes(x = Sepal.Length,
+           fill = Species
+        )
+  ) + geom_density()
+
+
+ggplot(iris,
+       aes(x = Sepal.Length,
+           fill = Species
+        )
+  ) + geom_line(stat = "density")
+
+
+ggplot(iris,
+       aes(x = Sepal.Length,
+           fill = Species
+        )
+  ) + stat_density(geom = "line")
+```
+
+Now make the areas under the curve partially transparent, so the overlap of the various distributions becomes clearly visible.
+```{r}
+ggplot(iris,
+       aes(x = Sepal.Length,
+           fill = Species
+        )
+  ) + geom_density(alpha=0.5)
+```
+
+
+
+## 3. Scales
+
+The `movies` data set provided in the package ggplot2movies containes data from the internet movie database (IMDB) about 28819 different movies. It contains information such as the length of the movie, the year the movie was released, number of votes the movie has received on the IMDB, and so on. To use the data set, you first need to load it in:
+```{r}
+library(ggplot2movies)
+head(movies)
+```
+
+Now, using this data set, make a scatter plot of the number of votes (`votes`) vs. the length of the movie (`length`). Use a log scale for both the x and the y axis.
+```{r}
+ggplot(movies, aes(y = votes, x = length)) + 
+  geom_point() + 
+  scale_x_log10() + 
+  scale_y_log10() 
+```
+
+Now color the points by year and use a color gradient that goes from yellow to blue. You can change the color scale using `scale_color_gradient()`.
+```{r}
+ggplot(movies, aes(y = votes, x = length, color = year)) + 
+  geom_point() + 
+  scale_x_log10() + 
+  scale_y_log10() + 
+  scale_color_gradient(low = "gold", high = "blue")
+```
+
+Now zoom in to movies that are between 1 and 20 minutes long, using `xlim()` instead of `scale_x_log10()`.
+```{r}
+ggplot(movies, aes(y = votes, x = length, color = year)) + 
+  geom_point() + 
+  xlim(1, 20) + 
+  scale_y_log10() + scale_color_gradient(low="gold",high = "blue")
+```
+
+## 4. If this was easy
+
+Take the log-log plot of `votes` vs. `length` from the `movies` data set and plot only movies that are between 1 and 20 minutes long, but keep the log scale.
+```{r}
+ggplot(movies, aes(y = votes, x = length, color = year)) + 
+  geom_point() + 
+  scale_x_log10(limits = c(1, 20)) + 
+  scale_y_log10() + 
+  scale_color_gradient(low = "gold", high = "blue")
+```
+
+Make a log-log plot of `votes` vs. `length` from the `movies` data set, faceted by year. Plot a trend line onto each facet, without confidence band.
+```{r fig.height=10, fig.width=10}
+ggplot(movies, aes(y = votes, x = length)) + 
+  geom_point() + 
+  geom_smooth(method = "lm", se = FALSE, size = 1.5, color = "tomato") + 
+  scale_x_log10() + 
+  scale_y_log10() + 
+  facet_wrap(~year)
+```
+
+Go back to the `bacteria` dataset, make a bar plot that shows the total number of cases within each treatment, and plot the number of such cases on top of each bar.
+```{r }
+ggplot(bacteria, aes(x = treatment)) + 
+  geom_bar() + 
+  stat_count(
+    aes(label=stat(count)), 
+    geom = "text", 
+    vjust = -1,
+    size = 5
+  ) + 
+  ylim(0, 120)
+```
+
+To plot the number of cases within each treatment, we need to count them. That count is done using stat_count(), which is used by default by geom_bar(). However, to actually plot these numbers, we need to have direct access to them, and therefore we have to call stat_count() explicitly. In the aes() call inside stat_count, the expression stat(count) indicates that we want to map the count column generated by the stat, instead of a column present in the original dataset.

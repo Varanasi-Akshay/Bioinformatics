@@ -166,6 +166,22 @@ trainIndex <- createDataPartition(NCbirths$Sex, p = 0.5,
                                   list = FALSE, 
                                   times = 1)
 
+  
+# Validation
+# 10 fold repeated 3 times
+train_control <- trainControl(method="repeatedcv", number=10, repeats=3)
+
+# fix the parameters of the algorithm (k-fold)
+#grid <- expand.grid(.fL=c(0), .usekernel=c(FALSE))
+
+# bootstrap
+# train_control <- trainControl(method="boot", number=100)
+# define training control
+#train_control <- trainControl(method="LOOCV")
+# train the model
+#model <- train(Species~., data=iris, trControl=train_control, method="nb")
+
+
 head(NCbirths)
 
 ```

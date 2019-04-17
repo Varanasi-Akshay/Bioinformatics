@@ -9,58 +9,35 @@ library(ggthemes)
 ## SDS 385 Report
 *Akshay Kumar Varanasi (av32826)*
 
-### Report
 ### Description of the data
-
-Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image and the 3-dimensional space is that described in: [K. P. Bennett and O. L. Mangasarian: "Robust Linear Programming Discrimination of Two Linearly Inseparable Sets", Optimization Methods and Software 1, 1992, 23-34].
-
-This database is also available through the UW CS ftp server: ftp ftp.cs.wisc.edu cd math-prog/cpo-dataset/machine-learn/WDBC/
-
-Also can be found on UCI Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29
-
 Attribute Information:
 
-1) ID number 2) Diagnosis (M = malignant, B = benign) 3-32)
+1) ID number 2) Diagnosis (M = malignant, B = benign) 3-12)
 
 Ten real-valued features are computed for each cell nucleus:
 
 a) radius (mean of distances from center to points on the perimeter) b) texture (standard deviation of gray-scale values) c) perimeter d) area e) smoothness (local variation in radius lengths) f) compactness (perimeter^2 / area - 1.0) g) concavity (severity of concave portions of the contour) h) concave points (number of concave portions of the contour) i) symmetry j) fractal dimension ("coastline approximation" - 1)
 
-The mean, standard error and "worst" or largest (mean of the three largest values) of these features were computed for each image, resulting in 30 features. For instance, field 3 is Mean Radius, field 13 is Radius SE, field 23 is Worst Radius.
-
-All feature values are recoded with four significant digits.
-
-Missing attribute values: none
-
 Class distribution: 357 benign, 212 malignant
 
 ### Question
-Fit a logistic regression model to predict the diagnosis using the different features computed for each cell nucleus. In the process of doing that, we get insight about the data for example what features are important and what are not for the diagnosis. 
-
+Find out which features are important for diagnosis of Breast Cancer?
 
 ### Answer
+We find the important features for diagnosis by fitting a logistic regression model and based on the model we get, we decide which are important.
+
 Call the necessary the libraries
 ```{r}
 library(ggplot2)
 library(plotROC)
 ```
-
-Before we start the analysis we first do little preprocessing like removing NAs and consider only the columns with "mean" values for simplicity.  
+Read the data from file
 ```{r}
-
-# Reading the data from csv file
-data = read.csv("breastcancer_data.csv")
-
-# Removing NA values if any and removing last column which contains NAs
-data_cleaned = na.omit(data[c(-length(data))])
-
-# considering only mean values for the data analysis
-cancer_data = data_cleaned[,1:12]
+cancer_data = read.csv("cancer_data.csv")
 head(cancer_data)
 ```
 
 Before we fit the model, we divide the data into training and testing data.
-
 ```{r}
 train_fraction <- 0.5 # fraction of data for training purposes
 set.seed(126) # set the seed to make the partition reproductible
@@ -71,19 +48,17 @@ train_data <- cancer_data[train_indices, ] # get training data
 test_data <- cancer_data[-train_indices, ] # get test data
 ```
 
-Now we fit the model with using all the features initially and then we remove one by one gradually till we get a reasonable model
-
+Now we fit the model with using all the features initially and then we remove one by one gradually till we get a reasonable model.
 ```{r}
 glm_out <- glm(
 diagnosis ~ radius_mean + texture_mean + perimeter_mean + area_mean + smoothness_mean + compactness_mean + concavity_mean + concave.points_mean + symmetry_mean + fractal_dimension_mean,
 data = train_data,
 family = binomial
 ) # family = binomial required for logistic regression
-summary(glm_out)
+#summary(glm_out) # Not showing due to constraint on space.
 ```
  
 After we successively remove predictors until only predictors with a p value less than 0.1 remain, we get the following model.
-
 ```{r}
 # diagnosis ~ texture_mean + area_mean + concave.points_mean
 
@@ -96,7 +71,6 @@ summary(glm_out)
 ```
 
 We create two different data frames one for training and one for test data. Now we see how good is this model on data by plotting the ROC curve.
-
 ```{r}
 # results data frame for training data
 df_train <- data.frame(
@@ -116,8 +90,7 @@ geom_roc(n.cuts = 0) +
 scale_color_colorblind()
 ```
 
-After looking at ROC curves we see that the model fits and predicts quite well on the data. Even the AUC values say the same thing that model really good on both the training and test data. 
-
+After looking at ROC curves we see that the model fits and predicts quite well on the data. Even the AUC values say the same thing that model is really good on both the training and test data. 
 ```{r}
 p <- ggplot(df_combined, aes(d = known_truth, m = predictor, color = data_name)
 ) +
@@ -132,8 +105,4 @@ select(-group, -PANEL) %>%
 arrange(desc(AUC))
 ```
 
-So by fitting the model and testing it we see that the model performs really good. This is because the diagnosis is dependent on the following three mean values: texture of the nuclei image , area of the nuclei , concave points. This is true because cancer is due to irregular nuclei size like large nuclei(area), texture is different as it is not of same color uniformly and the shape is not circular so has many concave points.  
-```{r}
-
-```
-
+So by fitting the model and testing it, we see that the model performs really good. This is because the diagnosis is dependent on the following three features: texture of the nuclei image , area of the nuclei , concave points. This is true because we identify cancer cells due to irregular nuclei size like large nuclei(area), different texture and the shape is not circular so cells have many concave points. Thus we found out the important features for diagnosis of breast cancer. 

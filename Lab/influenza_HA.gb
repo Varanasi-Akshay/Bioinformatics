@@ -1,0 +1,1052 @@
+LOCUS       MK773421                1752 bp    cRNA    linear   VRL 14-APR-2019
+DEFINITION  Influenza A virus (A/Texas/47/2019(H1N1)) segment 4 hemagglutinin
+            (HA) gene, complete cds.
+ACCESSION   MK773421
+VERSION     MK773421.1
+DBLINK      BioProject: PRJNA37813
+KEYWORDS    .
+SOURCE      Influenza A virus
+  ORGANISM  Influenza A virus
+            Viruses; ssRNA viruses; ssRNA negative-strand viruses;
+            Negarnaviricota; Polyploviricotina; Insthoviricetes;
+            Articulavirales; Orthomyxoviridae; Alphainfluenzavirus.
+REFERENCE   1  (bases 1 to 1752)
+  AUTHORS   Jernigan,D., Wentworth,D., Katz,J., Barnes,J., Garten,R. and Xu,X.
+  TITLE     Influenza Sequencing Activity group
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1752)
+  AUTHORS   Jernigan,D., Wentworth,D., Katz,J., Barnes,J., Garten,R. and Xu,X.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-APR-2019) WHO Collaborating Center for Surveillance,
+            Epidemiology and Control of Influenza, Influenza Division, Centers
+            for Disease Control and Prevention, 1600 Clifton Road, N.E.,
+            Atlanta, GA 30333, USA
+COMMENT     ##FluData-START##
+            EPI_ISOLATE_ID   :: EPI_ISL_344800
+            NAME             :: A/Texas/47/2019
+            TYPE             :: H1N1
+            Segment_name     :: HA
+            HOST_AGE         :: 59
+            HOST_GENDER      :: F
+            PASSAGE          :: Original
+            LOCATION         :: United States / Texas
+            COLLECT_DATE     :: 09-Feb-2019
+            Lineage          :: A(H1N1)pdm09
+            SPECIMEN_ID      :: 283 ORIGINAL
+            SENDER_LAB       :: DC Public Health Lab
+            SEQLAB_SAMPLE_ID :: 3026019721
+            EPI_SEQUENCE_ID  :: EPI1382937
+            ##FluData-END##
+FEATURES             Location/Qualifiers
+     source          1..1752
+                     /organism="Influenza A virus"
+                     /mol_type="viral cRNA"
+                     /strain="A/Texas/47/2019"
+                     /serotype="H1N1"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:11320"
+                     /segment="4"
+                     /country="USA: Texas"
+                     /collection_date="09-Feb-2019"
+                     /note="passage details:Original"
+     gene            21..1721
+                     /gene="HA"
+     CDS             21..1721
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="QBY34429.1"
+                     /translation="MKAILVVLLYTFTTANADTLCIGYHANNSTDTVDTVLEKNVTVT
+                     HSVNLLEDKHNGKLCKLRGVAPLHLGKCNIAGWILGNPECESLSTARSWSYIVETSNS
+                     DNGTCYPGDFINYEELREQLSSVSSFERFEIFPKTSSWPNHDSNKGVTAACSHAGAKS
+                     FYKNLIWLVKKGNSYPKLNQTYINDKGKEILVLWGIHHPPTTADQQSLYQNADAYVFV
+                     GTSRYSKKFKPEIATRPKVRDQEGRMNYYWTLVEPGDKITFEATGNLVVPRYAFTMER
+                     NAGSGIIISDTPVHDCNTTCQTPEGAINTSLPFQNVHPITIGKCPKYVKSTKLRLATG
+                     LRNVPSIQSRGLFGAIAGFIEGGWTGMVDGWYGYHHQNEQGSGYAADLKSTQNAIDKI
+                     TNKVNSVIEKMNTQFTAVGKEFNHLEKRIENLNKKVDDGFLDIWTYNAELLVLLENER
+                     TLDYHDSNVKNLYEKVRTQLKNNAKEIGNGCFEFYHKCDNTCMESVKNGTYDYPKYSE
+                     EAKLNREKIDGVKLESTRIYQILAIYSTVASSLVLVVSLGAISFWMCSNGSLQCRICI
+                     "
+     sig_peptide     21..71
+                     /gene="HA"
+     mat_peptide     72..1052
+                     /gene="HA"
+                     /product="HA1"
+     mat_peptide     1053..1718
+                     /gene="HA"
+                     /product="HA2"
+ORIGIN      
+        1 ggaaaacaaa agcaacaaaa atgaaggcaa tactagtagt tctgctgtat acatttacaa
+       61 ccgcaaatgc agacacatta tgtataggtt atcatgcgaa caattcaaca gacactgtag
+      121 acacagtact agaaaagaat gtaacggtaa cacactctgt taatcttctg gaagacaagc
+      181 ataacggaaa actatgcaaa ctaagagggg tagccccatt gcatttgggt aaatgtaaca
+      241 ttgctggctg gatcctggga aatccagagt gtgaatcact ctccacagca agatcatggt
+      301 cctacattgt ggaaacatct aattcagaca atggaacgtg ttacccagga gatttcatca
+      361 attatgagga gctaagagag caactgagct cagtgtcatc atttgaaagg tttgaaatat
+      421 tccccaagac aagttcatgg cctaatcatg actcgaacaa aggtgtaacg gcagcatgtt
+      481 ctcacgctgg agcaaaaagc ttctacaaaa acttgatatg gctggttaaa aaagggaatt
+      541 catacccaaa gctcaaccaa acctacatta atgataaagg gaaagaaatc ctcgtgctgt
+      601 ggggcatcca ccatccacct actactgctg accaacaaag tctctatcag aatgcagatg
+      661 catatgtttt tgtggggaca tcaagataca gcaagaagtt caagccggaa atagcaacaa
+      721 gacccaaagt gagggatcaa gaagggagaa tgaactatta ctggacacta gtagagccgg
+      781 gagacaaaat aacattcgaa gcaactggaa atctagtggt accgagatat gcattcacaa
+      841 tggaaagaaa cgctgggtct ggtattatca tttcagatac accagtccac gattgcaata
+      901 caacttgtca gacacccgag ggtgctataa acaccagcct cccatttcag aatgtacatc
+      961 cgatcacaat tgggaaatgt ccaaagtatg taaaaagcac aaaattgagg ctggccacag
+     1021 gattgaggaa tgtcccgtct attcaatcta gaggcctatt cggggccatt gccggcttca
+     1081 ttgaaggggg gtggacaggg atggtagatg gatggtacgg ttatcaccat caaaatgagc
+     1141 aggggtcagg atatgcagcc gatctgaaga gcacacaaaa tgccattgat aagattacta
+     1201 acaaagtaaa ttctgttatt gaaaagatga atacacagtt cacagcagtg ggtaaagagt
+     1261 tcaaccacct tgaaaaaaga atagagaatc taaataaaaa agttgatgat ggtttcctgg
+     1321 acatttggac ttacaatgcc gaactgttgg ttctactgga aaatgaaaga actttggact
+     1381 atcatgattc aaatgtgaag aacttgtatg aaaaagtaag aacccagtta aaaaacaatg
+     1441 ccaaagaaat tggaaacggc tgctttgaat tttaccacaa atgcgataac acatgcatgg
+     1501 aaagtgtcaa gaatgggact tatgactacc caaaatactc agaggaagca aaattaaaca
+     1561 gagaaaaaat agatggagta aagctggaat caacaaggat ctaccagatt ttggcgatct
+     1621 attcaactgt cgccagttca ttggtactgg tagtctccct gggggcaatc agcttctgga
+     1681 tgtgctctaa tgggtctcta caatgtagaa tatgtattta acattaggat ttcagaatca
+     1741 tgagaaaaac ac
+//
+
+LOCUS       MK773417                1753 bp    cRNA    linear   VRL 14-APR-2019
+DEFINITION  Influenza A virus (A/Texas/46/2019(H1N1)) segment 4 hemagglutinin
+            (HA) gene, complete cds.
+ACCESSION   MK773417
+VERSION     MK773417.1
+DBLINK      BioProject: PRJNA37813
+KEYWORDS    .
+SOURCE      Influenza A virus
+  ORGANISM  Influenza A virus
+            Viruses; ssRNA viruses; ssRNA negative-strand viruses;
+            Negarnaviricota; Polyploviricotina; Insthoviricetes;
+            Articulavirales; Orthomyxoviridae; Alphainfluenzavirus.
+REFERENCE   1  (bases 1 to 1753)
+  AUTHORS   Jernigan,D., Wentworth,D., Katz,J., Barnes,J., Garten,R. and Xu,X.
+  TITLE     Influenza Sequencing Activity group
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1753)
+  AUTHORS   Jernigan,D., Wentworth,D., Katz,J., Barnes,J., Garten,R. and Xu,X.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-APR-2019) WHO Collaborating Center for Surveillance,
+            Epidemiology and Control of Influenza, Influenza Division, Centers
+            for Disease Control and Prevention, 1600 Clifton Road, N.E.,
+            Atlanta, GA 30333, USA
+COMMENT     ##FluData-START##
+            EPI_ISOLATE_ID   :: EPI_ISL_344799
+            NAME             :: A/Texas/46/2019
+            TYPE             :: H1N1
+            Segment_name     :: HA
+            HOST_AGE         :: 36
+            HOST_GENDER      :: M
+            PASSAGE          :: Original
+            LOCATION         :: United States / Texas
+            COLLECT_DATE     :: 08-Feb-2019
+            Lineage          :: A(H1N1)pdm09
+            SPECIMEN_ID      :: 288 ORIGINAL
+            SENDER_LAB       :: DC Public Health Lab
+            SEQLAB_SAMPLE_ID :: 3026019720
+            EPI_SEQUENCE_ID  :: EPI1382929
+            ##FluData-END##
+FEATURES             Location/Qualifiers
+     source          1..1753
+                     /organism="Influenza A virus"
+                     /mol_type="viral cRNA"
+                     /strain="A/Texas/46/2019"
+                     /serotype="H1N1"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:11320"
+                     /segment="4"
+                     /country="USA: Texas"
+                     /collection_date="08-Feb-2019"
+                     /note="passage details:Original"
+     gene            22..1722
+                     /gene="HA"
+     CDS             22..1722
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="QBY34424.1"
+                     /translation="MKAILVVLLYTFTTANADTLCIGYHANNSTDTVDTVLEKNVTVT
+                     HSVNLLEDKHNGKLCKLRGVAPLHLGKCNIAGWILGNPECESLSTARSWSYIVETSNS
+                     DNGTCYPGDFINYEELREQLSSVSSFERFEIFPKTSSWPNHDSNKGVTAACPHAGAKS
+                     FYKNLIWLVKKGNSYPKLNQTYINDKGKEVLVLWGIHHPPTTADQQSLYQNADAYVFV
+                     GTSRYSKKFKPEIATRPKVRDQEGRMNYYWTLVEPGDKITFEATGNLVVPRYAFTMER
+                     NAGSGIIISDTPVHDCNTTCQTPEGAINTSLPFQNVHPITIGTCPKYVKSTKLRLATG
+                     LRNVPSIQSRGLFGAIAGFIEGGWTGMVDGWYGYHHQNEQGSGYAADLKSTQNAIDKI
+                     TNKVNSVIEKMNTQFTAVGKEFNHLEKRMENLNKKVDDGFLDIWTYNAELLVLLENER
+                     TLDYHDSNVKNLYEKVRNQLKNNAKEIGNGCFEFYHKCDNTCMESVKNGTYDYPKYSE
+                     EAKLSREKIDGVKLDSTRIYQILAIYSTVASSLVLVVSLGAISFWMCSNGSLQCRICI
+                     "
+     sig_peptide     22..72
+                     /gene="HA"
+     mat_peptide     73..1053
+                     /gene="HA"
+                     /product="HA1"
+     mat_peptide     1054..1719
+                     /gene="HA"
+                     /product="HA2"
+ORIGIN      
+        1 ggaaaaacaa aagcaacaaa aatgaaggca atactagtag ttctgctgta tacatttaca
+       61 accgcaaatg cagacacatt atgtataggt tatcatgcga acaattcaac agacactgta
+      121 gatacagtac tagaaaagaa tgtaacagta acacactctg ttaatcttct ggaagacaag
+      181 cataacggaa aactatgcaa actaagaggg gtagccccat tgcatttggg caaatgcaac
+      241 attgctggct ggatcctggg aaatccagag tgtgaatcac tctccacagc aagatcatgg
+      301 tcctacattg tggaaacgtc taattcagac aatggaacat gttacccagg agatttcatc
+      361 aattatgagg agctaagaga gcaattgagc tcagtgtcat catttgaaag gtttgaaata
+      421 ttccccaaga caagttcatg gcctaatcat gactcgaaca aaggtgtaac ggcagcatgt
+      481 cctcacgctg gagcaaaaag cttctacaaa aacttgatat ggctggttaa aaaaggaaat
+      541 tcatacccaa agctcaacca aacctacatt aatgataaag ggaaagaagt cctcgtgctg
+      601 tggggtattc accatccacc tactactgct gaccaacaaa gtctctatca gaatgcagat
+      661 gcatatgttt ttgtggggac atcaagatac agcaagaagt tcaagccgga aatagcaaca
+      721 agacccaaag tgagggatca agaagggaga atgaactatt actggacact agtagagccg
+      781 ggagacaaaa taacattcga agcaactgga aatctagtgg taccgagata tgcattcaca
+      841 atggaaagaa atgctggatc tggtattatc atttcagata caccagtcca cgattgcaat
+      901 acaacttgtc agacccccga gggtgctata aacaccagtc tcccatttca gaatgtacat
+      961 ccgatcacaa ttgggacatg tccaaagtat gtaaaaagca caaaattgag actggccaca
+     1021 ggattgagga atgtcccgtc tattcaatct agaggcctat tcggggccat tgccggcttc
+     1081 attgaagggg ggtggacagg gatggtagat ggatggtatg gttatcacca tcaaaatgag
+     1141 caggggtcag gatatgcagc cgatctgaag agcacacaaa atgccattga taagattact
+     1201 aacaaggtaa attctgttat tgaaaagatg aatacacagt tcacagcagt gggtaaagag
+     1261 ttcaaccacc ttgaaaaaag aatggagaat ctaaataaaa aagttgatga tggtttcctg
+     1321 gacatttgga cttacaatgc cgaactgttg gttctactag aaaatgaaag aactttggac
+     1381 tatcatgatt caaatgtgaa gaacttgtat gaaaaagtaa gaaaccagtt aaaaaacaat
+     1441 gccaaggaaa ttggaaacgg ctgctttgaa ttttaccaca aatgcgataa cacatgcatg
+     1501 gaaagtgtca agaatgggac ttatgactac ccaaaatact cagaggaagc aaaattaagc
+     1561 agagaaaaaa tagatggagt aaagctggac tcaacaagga tctaccagat tttggcgatc
+     1621 tattcaactg tcgccagttc attggtactg gtagtctccc tgggggcaat cagcttctgg
+     1681 atgtgctcta atgggtctct acagtgtaga atatgtattt aacattagga tttcagaatc
+     1741 atgagaaaaa cac
+//
+
+LOCUS       MK773405                1752 bp    cRNA    linear   VRL 14-APR-2019
+DEFINITION  Influenza A virus (A/Texas/44/2019(H1N1)) segment 4 hemagglutinin
+            (HA) gene, complete cds.
+ACCESSION   MK773405
+VERSION     MK773405.1
+DBLINK      BioProject: PRJNA37813
+KEYWORDS    .
+SOURCE      Influenza A virus
+  ORGANISM  Influenza A virus
+            Viruses; ssRNA viruses; ssRNA negative-strand viruses;
+            Negarnaviricota; Polyploviricotina; Insthoviricetes;
+            Articulavirales; Orthomyxoviridae; Alphainfluenzavirus.
+REFERENCE   1  (bases 1 to 1752)
+  AUTHORS   Jernigan,D., Wentworth,D., Katz,J., Barnes,J., Garten,R. and Xu,X.
+  TITLE     Influenza Sequencing Activity group
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1752)
+  AUTHORS   Jernigan,D., Wentworth,D., Katz,J., Barnes,J., Garten,R. and Xu,X.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-APR-2019) WHO Collaborating Center for Surveillance,
+            Epidemiology and Control of Influenza, Influenza Division, Centers
+            for Disease Control and Prevention, 1600 Clifton Road, N.E.,
+            Atlanta, GA 30333, USA
+COMMENT     ##FluData-START##
+            EPI_ISOLATE_ID   :: EPI_ISL_344819
+            NAME             :: A/Texas/44/2019
+            TYPE             :: H1N1
+            Segment_name     :: HA
+            HOST_AGE         :: 37
+            HOST_GENDER      :: F
+            PASSAGE          :: Original
+            LOCATION         :: United States / Texas
+            COLLECT_DATE     :: 07-Feb-2019
+            Lineage          :: A(H1N1)pdm09
+            SPECIMEN_ID      :: AVI1900318 ORIGINAL
+            SENDER_LAB       :: Texas Department of State Health
+                                Services-Laboratory Services
+            SEQLAB_SAMPLE_ID :: 3026019685
+            EPI_SEQUENCE_ID  :: EPI1383085
+            ##FluData-END##
+FEATURES             Location/Qualifiers
+     source          1..1752
+                     /organism="Influenza A virus"
+                     /mol_type="viral cRNA"
+                     /strain="A/Texas/44/2019"
+                     /serotype="H1N1"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:11320"
+                     /segment="4"
+                     /country="USA: Texas"
+                     /collection_date="07-Feb-2019"
+                     /note="passage details:Original"
+     gene            21..1721
+                     /gene="HA"
+     CDS             21..1721
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="QBY34407.1"
+                     /translation="MKAILVVLLYTFTTANADTLCIGYHANNSTDTVDTVLEKNVTVT
+                     HSVNLLEDKHNGKLCKLRGVAPLHLGKCNIAGWILGNPECESLSTARSWSYIVETSNS
+                     DNGTCYPGDFINYEELREQLSSVSSFERFEIFPKASSWPNHDSNKGVTAACPHAGAKS
+                     FYKNLIWLVKKGNSYPKLNQTYINDKGKEVLVLWGIHHPPTTADQQSLYQNADAYVFV
+                     GTSRYSKKFKPEIATRPKVRDQEGRMNYYWTLVEPGDKITFEATGNLVVPRYAFTMER
+                     NAGSGIIISDTPVHDCNTTCQTPEGAINTSLPFQNVHPITIGKCPKYVKSTKLRLATG
+                     LRNVPSIQSRGLFGAIAGFIEGGWTGMVDGWYGYHHQNEQGSGYAADLKSTQNAIDKI
+                     TNKVNSVIEKMNTQFTAVGKEFNHLEKRIENLNKKVDDGFLDIWTYNAELLVLLENER
+                     TLDYHDSNVKNLYEKVRNQLKNNAKEIGNGCFEFYHKCDNTCMESVKNGTYDYPKYSE
+                     EAKLNREKIDGVKLESTRIYQILAIYSTVASSLVLVVSLGAISFWMCSNGSLQCRICI
+                     "
+     sig_peptide     21..71
+                     /gene="HA"
+     mat_peptide     72..1052
+                     /gene="HA"
+                     /product="HA1"
+     mat_peptide     1053..1718
+                     /gene="HA"
+                     /product="HA2"
+ORIGIN      
+        1 ggaaaacaaa agcaacaaaa atgaaggcaa tactagtagt tctactgtat acatttacaa
+       61 ccgcaaatgc agacacatta tgtataggtt atcatgcgaa caattcaaca gacactgtag
+      121 acacagtact agaaaagaat gtaacagtaa cacactctgt taatcttctg gaagacaagc
+      181 ataacggaaa actatgcaaa ctaagaggag tagccccatt gcatttgggt aaatgtaaca
+      241 ttgctggctg gatcctggga aatccagagt gtgaatcact ctccacagca agatcatggt
+      301 cctacattgt ggaaacatct aattcagaca atggaacgtg ttacccagga gatttcatca
+      361 attatgagga actaagagag caattgagct cagtgtcatc atttgaaagg tttgaaatat
+      421 tccccaaggc aagttcatgg cctaatcatg actcgaacaa aggtgtaacg gcagcatgtc
+      481 ctcacgctgg agcaaaaagc ttctacaaaa atttgatatg gctggttaaa aaagggaatt
+      541 catacccaaa gctcaaccaa acctacatta atgataaagg gaaagaagtc ctcgtgctgt
+      601 ggggcattca ccatccacct actaccgctg accaacaaag tctctatcag aatgcagatg
+      661 catatgtttt tgtggggaca tcaagataca gcaagaagtt caagccggaa atagcaacaa
+      721 gacccaaagt gagggatcaa gaagggagaa tgaactatta ctggacacta gtagagccgg
+      781 gagacaaaat aacattcgaa gcaactggaa atctagtggt accgagatat gcattcacaa
+      841 tggaaagaaa tgctggatct ggtattatca tttcagatac accagtccac gattgcaata
+      901 caacttgtca gacacccgag ggtgctataa acaccagcct cccatttcag aatgtacatc
+      961 cgatcacaat tgggaaatgt ccaaagtatg taaaaagcac aaaattgaga ctggccacag
+     1021 gattgaggaa tgtcccgtct attcaatcta gaggcctatt cggggccatt gccggcttca
+     1081 ttgaaggggg gtggacaggg atggtagatg gatggtacgg ttatcaccat caaaatgagc
+     1141 aggggtcagg atatgcagcc gatctgaaga gcacacaaaa tgccattgat aagattacta
+     1201 acaaagtaaa ttctgttatt gaaaaaatga atacacagtt cacagcagtg ggtaaagagt
+     1261 tcaaccacct tgaaaaaaga atagagaatc taaataaaaa ggttgatgat ggtttcctgg
+     1321 acatttggac ttacaatgcc gaactgttgg ttctgctgga aaacgaaaga actttggact
+     1381 atcacgattc aaatgtgaag aatttgtatg aaaaagtaag aaaccagtta aaaaacaatg
+     1441 ccaaggaaat tggaaacggc tgctttgaat tttaccacaa atgcgacaac acatgcatgg
+     1501 aaagtgtyaa gaatgggact tatgactacc caaaatactc agaggaagca aaattaaaca
+     1561 gagaaaaaat agatggagta aagctggaat caacaaggat ctaccagatt ttggcgatct
+     1621 attcaactgt cgccagttca ttggtactgg tagtctccct gggggcaatc agcttctgga
+     1681 tgtgctctaa tgggtctcta cagtgtagaa tatgtattta acattaggat ttcagaatca
+     1741 tgagaaaaac ac
+//
+
+LOCUS       MK773397                1752 bp    cRNA    linear   VRL 14-APR-2019
+DEFINITION  Influenza A virus (A/Texas/42/2019(H1N1)) segment 4 hemagglutinin
+            (HA) gene, complete cds.
+ACCESSION   MK773397
+VERSION     MK773397.1
+DBLINK      BioProject: PRJNA37813
+KEYWORDS    .
+SOURCE      Influenza A virus
+  ORGANISM  Influenza A virus
+            Viruses; ssRNA viruses; ssRNA negative-strand viruses;
+            Negarnaviricota; Polyploviricotina; Insthoviricetes;
+            Articulavirales; Orthomyxoviridae; Alphainfluenzavirus.
+REFERENCE   1  (bases 1 to 1752)
+  AUTHORS   Jernigan,D., Wentworth,D., Katz,J., Barnes,J., Garten,R. and Xu,X.
+  TITLE     Influenza Sequencing Activity group
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1752)
+  AUTHORS   Jernigan,D., Wentworth,D., Katz,J., Barnes,J., Garten,R. and Xu,X.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-APR-2019) WHO Collaborating Center for Surveillance,
+            Epidemiology and Control of Influenza, Influenza Division, Centers
+            for Disease Control and Prevention, 1600 Clifton Road, N.E.,
+            Atlanta, GA 30333, USA
+COMMENT     ##FluData-START##
+            EPI_ISOLATE_ID   :: EPI_ISL_344832
+            NAME             :: A/Texas/42/2019
+            TYPE             :: H1N1
+            Segment_name     :: HA
+            HOST_AGE         :: 51
+            HOST_GENDER      :: M
+            PASSAGE          :: Original
+            LOCATION         :: United States / Texas
+            COLLECT_DATE     :: 04-Feb-2019
+            Lineage          :: A(H1N1)pdm09
+            SPECIMEN_ID      :: AVI1900237 ORIGINAL
+            SENDER_LAB       :: Texas Department of State Health
+                                Services-Laboratory Services
+            SEQLAB_SAMPLE_ID :: 3026019682
+            EPI_SEQUENCE_ID  :: EPI1383194
+            ##FluData-END##
+FEATURES             Location/Qualifiers
+     source          1..1752
+                     /organism="Influenza A virus"
+                     /mol_type="viral cRNA"
+                     /strain="A/Texas/42/2019"
+                     /serotype="H1N1"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:11320"
+                     /segment="4"
+                     /country="USA: Texas"
+                     /collection_date="04-Feb-2019"
+                     /note="passage details:Original"
+     gene            21..1721
+                     /gene="HA"
+     CDS             21..1721
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="QBY34396.1"
+                     /translation="MKAIIVVLLYTFTTANADTLCIGYHANNSTDTVDTVLEKNVTVT
+                     HSVNLLEDKHNGKLCKLRGVAPLHLGKCNIAGWILGNPECESLSTARSWSYIVETSNS
+                     DNGTCYPGDFINYEELREQLSSVSSFERFEIFPKTSSWPNHDSNKGVTAACPHDGAKS
+                     FYKNLIWLVKKGNSYPKLNQTYINDKGKEVLVLWGIHHPPTTADQQSLYQNADAYVFV
+                     GTSRYSKKFKPEIATRPKVRDQEGRMNYYWTLVEPGDKITFEATGNLVVPRYAFTMER
+                     NAGSGIIISDTPVHDCNTTCQTPKGAINTSLPFQNVHPITIGTCPKYVKSTKLRLATG
+                     LRNVPSIQSRGLFGAIAGFIEGGWTGMVDGWYGYHHQNEQGSGYAADLKSTQNAIDKI
+                     TNKVNSVIEKMNTQFTAVGKEFNHLEKRMENLNKKVDDGFLDIWTYNAELLVLLENER
+                     TLDYHDSNVKNLYEKVRNQLKNNAKEIGNGCFEFYHKCDNTCMESVKNGTYDYPKYSE
+                     EAKLSREKIDGVKLDSTRIYQILAIYSTVASSLVLVVSLGAISFWMCSNGSLQCRICI
+                     "
+     sig_peptide     21..71
+                     /gene="HA"
+     mat_peptide     72..1052
+                     /gene="HA"
+                     /product="HA1"
+     mat_peptide     1053..1718
+                     /gene="HA"
+                     /product="HA2"
+ORIGIN      
+        1 ggaaaacata agcaacaaaa atgaaggcaa taatagtagt tctgctgtat acatttacaa
+       61 ccgcaaacgc agacacatta tgtataggtt atcatgcgaa caattcaaca gacactgtag
+      121 atacagtact agaaaagaat gtaacagtaa cacactctgt taatcttctg gaagacaagc
+      181 ataacggaaa actatgcaaa ctaagagggg tagccccatt gcatttgggc aaatgcaaca
+      241 ttgctggctg gatcctggga aatccagagt gtgaatcact ctccacagca agatcatggt
+      301 cctacattgt ggaaacgtct aattcagaca atggaacatg ttacccagga gatttcatca
+      361 attatgagga gctaagagag caattgagct cagtgtcatc atttgaaagg tttgaaatat
+      421 tccccaagac aagttcatgg cctaatcatg actcgaacaa aggtgtaacg gcagcatgtc
+      481 ctcacgatgg agcaaaaagc ttctacaaaa acttgatatg gctggttaaa aaaggaaatt
+      541 catacccaaa gctcaaccaa acctacatta atgataaagg gaaagaagtc ctcgtgctgt
+      601 ggggcattca ccatccacct actactgctg accaacaaag tctctatcag aatgcagatg
+      661 catatgtttt tgtggggaca tcaagataca gcaagaagtt caagccagaa atagcaacaa
+      721 gacccaaagt gagggatcaa gaagggagaa tgaactatta ctggacacta gtagagccgg
+      781 gagacaaaat aacattcgaa gcaactggaa atctagtggt accgagatat gcattcacaa
+      841 tggaaagaaa tgctggatct ggtattatca tttcagatac accagtccac gattgcaata
+      901 caacttgtca gacccccaag ggtgctataa acaccagtct cccatttcag aatgtacatc
+      961 cgatcacaat tgggacatgt ccaaagtatg taaaaagcac aaaattgaga ctggccacag
+     1021 gattgaggaa tgtcccgtct attcaatcta gaggcctatt cggggccatt gccggcttca
+     1081 ttgaaggggg gtggacaggg atggtagatg gatggtatgg ttatcaccat caaaatgagc
+     1141 aggggtcagg atatgcagcc gatctgaaga gcacacaaaa tgccattgat aagattacta
+     1201 acaaagtaaa ttctgttatt gaaaagatga atacacagtt cacagcagtg ggtaaagagt
+     1261 tcaaccacct tgaaaaaaga atggagaatc taaataaaaa agttgatgat ggtttcctgg
+     1321 acatttggac ttacaatgcc gaactgttgg ttctactaga aaatgaaaga actttggact
+     1381 atcacgattc aaatgtgaag aacttgtatg aaaaagtgag aaaccagtta aaaaacaatg
+     1441 ccaaggaaat tggaaacggc tgctttgaat tttaccacaa atgcgataac acatgcatgg
+     1501 aaagtgtcaa gaatgggact tatgactacc caaaatactc agaggaagca aaattaagca
+     1561 gagaaaaaat agatggagta aagctggact caacaaggat ctaccagatt ttggcgatct
+     1621 attcaactgt cgccagttca ttggtactgg tagtctccct gggggcaatc agcttctgga
+     1681 tgtgctctaa tgggtctcta cagtgtagaa tatgtattta acattaggat ttcagaatca
+     1741 tgagaaaaac ac
+//
+
+LOCUS       MK773389                1752 bp    cRNA    linear   VRL 14-APR-2019
+DEFINITION  Influenza A virus (A/Texas/38/2019(H1N1)) segment 4 hemagglutinin
+            (HA) gene, complete cds.
+ACCESSION   MK773389
+VERSION     MK773389.1
+DBLINK      BioProject: PRJNA37813
+KEYWORDS    .
+SOURCE      Influenza A virus
+  ORGANISM  Influenza A virus
+            Viruses; ssRNA viruses; ssRNA negative-strand viruses;
+            Negarnaviricota; Polyploviricotina; Insthoviricetes;
+            Articulavirales; Orthomyxoviridae; Alphainfluenzavirus.
+REFERENCE   1  (bases 1 to 1752)
+  AUTHORS   Jernigan,D., Wentworth,D., Katz,J., Barnes,J., Garten,R. and Xu,X.
+  TITLE     Influenza Sequencing Activity group
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1752)
+  AUTHORS   Jernigan,D., Wentworth,D., Katz,J., Barnes,J., Garten,R. and Xu,X.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-APR-2019) WHO Collaborating Center for Surveillance,
+            Epidemiology and Control of Influenza, Influenza Division, Centers
+            for Disease Control and Prevention, 1600 Clifton Road, N.E.,
+            Atlanta, GA 30333, USA
+COMMENT     ##FluData-START##
+            EPI_ISOLATE_ID   :: EPI_ISL_344772
+            NAME             :: A/Texas/38/2019
+            TYPE             :: H1N1
+            Segment_name     :: HA
+            HOST_AGE         :: 2
+            HOST_GENDER      :: M
+            PASSAGE          :: Original
+            LOCATION         :: United States / Texas
+            COLLECT_DATE     :: 31-Jan-2019
+            Lineage          :: A(H1N1)pdm09
+            SPECIMEN_ID      :: 2560394 ORIGINAL
+            SENDER_LAB       :: San Antonio Metropolitan Health
+            SEQLAB_SAMPLE_ID :: 3026019603
+            EPI_SEQUENCE_ID  :: EPI1382717
+            ##FluData-END##
+FEATURES             Location/Qualifiers
+     source          1..1752
+                     /organism="Influenza A virus"
+                     /mol_type="viral cRNA"
+                     /strain="A/Texas/38/2019"
+                     /serotype="H1N1"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:11320"
+                     /segment="4"
+                     /country="USA: Texas"
+                     /collection_date="31-Jan-2019"
+                     /note="passage details:Original"
+     gene            21..1721
+                     /gene="HA"
+     CDS             21..1721
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="QBY34385.1"
+                     /translation="MKAILVVLLYTFTTANADTLCIGYHANNSTDTVDTVLEKNVTVT
+                     HSVNLLEDKHNGKLCKLRGVAPLHLGKCNIAGWILGNPECESLSTARSWSYIVETSNS
+                     DNGTCYPGDFINYEELREQLSSVSSFERFEIFPKASSWPNHDSNKGVTAACPHAGAKS
+                     FYKNLIWLVKKGNSYPKLNQTYINDKGKEVLVLWGIHHPPTTADQQSLYQNADAYVFV
+                     GTSRYSKKFKPEIATRPKVRDQEGRMNYYWTLVEPGDKITFEATGNLVVPRYAFTMER
+                     NAGSGIIISDTPVHDCNTTCQTPEGAINTSLPFQNVHPITIGKCPKYVKSTKLRLATG
+                     LRNVPSIQSRGLFGAIAGFIEGGWTGMVDGWYGYHHQNEQGSGYAADLKSTQNAIDKI
+                     TNKVNSVIEKMNTQFTAVGKEFNHLEKRIENLNKKVDDGFLDIWTYNAELLVLLENER
+                     TLDYHDSNVKNLYEKVRNQLKSNAKEIGNGCFEFYHKCDNTCMESVKNGTYDYPKYSE
+                     EAKLNREKIDGVKLESTRIYQILAIYSTVASSLVLVVSLGAISFWMCSNGSLQCRICI
+                     "
+     sig_peptide     21..71
+                     /gene="HA"
+     mat_peptide     72..1052
+                     /gene="HA"
+                     /product="HA1"
+     mat_peptide     1053..1718
+                     /gene="HA"
+                     /product="HA2"
+ORIGIN      
+        1 ggaaaacaaa agcaacaaaa atgaaggcaa tactagtagt tctactgtat acatttacaa
+       61 ccgcaaatgc agacacatta tgtataggtt atcatgcgaa caattcaaca gacactgtag
+      121 acacagtact agaaaagaat gtaacagtaa cacactctgt taatcttctg gaagacaagc
+      181 ataacggaaa actatgcaaa ctaagaggag tagccccatt gcatttgggt aaatgtaaca
+      241 ttgctggctg gatcctggga aatccagagt gtgaatcact ctccacagca agatcatggt
+      301 cctacattgt ggaaacatct aattcagaca atggaacgtg ttacccagga gatttcatca
+      361 attatgagga actaagagag caactgagct cagtgtcatc atttgaaagg tttgaaatat
+      421 tccccaaggc aagttcatgg cctaatcatg actcgaacaa aggtgtaacg gcagcatgtc
+      481 ctcacgctgg agcaaaaagc ttctacaaaa atttgatatg gctggttaaa aaagggaatt
+      541 catacccaaa gctcaaccaa acctacatta atgataaagg gaaagaagtc ctcgtgctgt
+      601 ggggcattca ccatccaccc actactgctg accaacaaag tctctatcag aatgcagatg
+      661 catatgtttt tgtggggaca tcaagataca gcaagaagtt caagccggaa atagcaacaa
+      721 gacccaaagt gagggatcaa gaagggagaa tgaactatta ctggacacta gtagagccgg
+      781 gagacaaaat aacattcgaa gcaactggaa atctagtggt accgagatat gcattcacaa
+      841 tggaaagaaa tgctggatct ggtattatca tttcagatac accagtccac gattgcaata
+      901 caacttgtca gacacccgag ggtgctataa acaccagcct cccatttcag aatgtacatc
+      961 cgatcacaat tgggaaatgt ccaaagtatg taaaaagcac aaaattgaga ctggccacag
+     1021 gattgaggaa tgtcccgtct attcaatcca gaggcctatt cggggccatt gccggcttca
+     1081 ttgaaggggg gtggacaggg atggtagatg gatggtacgg ttatcaccat caaaatgagc
+     1141 aggggtcagg atatgcagcc gatctgaaga gtacacaaaa tgccattgat aagattacta
+     1201 acaaagtaaa ttctgttatt gaaaaaatga atacacagtt cacagcagtg ggtaaagagt
+     1261 tcaaccacct tgaaaaaaga atagagaatc taaataaaaa ggttgatgat ggtttcctgg
+     1321 acatttggac ttacaatgcc gaactgttgg ttctgctgga aaacgaaaga actttggact
+     1381 atcacgattc aaatgtgaag aatttgtatg aaaaagtaag aaaccagtta aaaagcaatg
+     1441 ccaaggaaat tggaaacggc tgctttgaat tttaccacaa atgcgacaac acatgcatgg
+     1501 aaagtgtcaa gaatgggact tatgactacc caaaatactc agaggaagca aaattaaaca
+     1561 gagaaaaaat agatggagta aagctggaat caacaaggat ctaccagatt ttggcgatct
+     1621 attcaaccgt cgccagttca ttggtactgg tagtctccct gggggcaatc agcttctgga
+     1681 tgtgctctaa tgggtctcta cagtgtagaa tatgtattta acattaggat ttcagaatca
+     1741 tgagaaaaac ac
+//
+
+LOCUS       MK773381                1752 bp    cRNA    linear   VRL 14-APR-2019
+DEFINITION  Influenza A virus (A/Texas/37/2019(H1N1)) segment 4 hemagglutinin
+            (HA) gene, complete cds.
+ACCESSION   MK773381
+VERSION     MK773381.1
+DBLINK      BioProject: PRJNA37813
+KEYWORDS    .
+SOURCE      Influenza A virus
+  ORGANISM  Influenza A virus
+            Viruses; ssRNA viruses; ssRNA negative-strand viruses;
+            Negarnaviricota; Polyploviricotina; Insthoviricetes;
+            Articulavirales; Orthomyxoviridae; Alphainfluenzavirus.
+REFERENCE   1  (bases 1 to 1752)
+  AUTHORS   Jernigan,D., Wentworth,D., Katz,J., Barnes,J., Garten,R. and Xu,X.
+  TITLE     Influenza Sequencing Activity group
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1752)
+  AUTHORS   Jernigan,D., Wentworth,D., Katz,J., Barnes,J., Garten,R. and Xu,X.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-APR-2019) WHO Collaborating Center for Surveillance,
+            Epidemiology and Control of Influenza, Influenza Division, Centers
+            for Disease Control and Prevention, 1600 Clifton Road, N.E.,
+            Atlanta, GA 30333, USA
+COMMENT     ##FluData-START##
+            EPI_ISOLATE_ID   :: EPI_ISL_344794
+            NAME             :: A/Texas/37/2019
+            TYPE             :: H1N1
+            Segment_name     :: HA
+            HOST_AGE         :: 3
+            HOST_GENDER      :: M
+            PASSAGE          :: Original
+            LOCATION         :: United States / Texas
+            COLLECT_DATE     :: 30-Jan-2019
+            Lineage          :: A(H1N1)pdm09
+            SPECIMEN_ID      :: 2560393 ORIGINAL
+            SENDER_LAB       :: San Antonio Metropolitan Health
+            SEQLAB_SAMPLE_ID :: 3026019602
+            EPI_SEQUENCE_ID  :: EPI1382889
+            ##FluData-END##
+FEATURES             Location/Qualifiers
+     source          1..1752
+                     /organism="Influenza A virus"
+                     /mol_type="viral cRNA"
+                     /strain="A/Texas/37/2019"
+                     /serotype="H1N1"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:11320"
+                     /segment="4"
+                     /country="USA: Texas"
+                     /collection_date="30-Jan-2019"
+                     /note="passage details:Original"
+     gene            21..1721
+                     /gene="HA"
+     CDS             21..1721
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="QBY34374.1"
+                     /translation="MKAILVVLLYTFTTANADTLCIGYHANNSTDTVDTVLEKNVTVT
+                     HSVNLLEDKHNGKLCKLRGVAPLHLGKCNIAGWILGNPECESLSTARSWSYIVETSNS
+                     DNGTCYPGDFINYEELREQLSSVSSFERFEIFPKTSSWPNHDSDKGVTAACPHAGAKS
+                     FYKNLIWLVKKGNSYPKLNQTYINDKGKEVLVLWGIHHPPTIADQQSLYQNADAYVFV
+                     GTSRYSKKFKPEIATRPKVRDQEGRMNYYWTLVEPGDKITFEATGNLVVPRYAFTMER
+                     DAGSGIIISDTPVHDCNTTCQTPEGAINTSLPFQNVHPITIGKCPKYVKSTKLRLATG
+                     LRNVPSIQSRGLFGAIAGFIEGGWTGMVDGWYGYHHQNEQGSGYAADLKSTQNAIDKI
+                     TNKVNSVIEKMNTQFTAVGKEFNHLEKRIENLNKKVDDGFLDIWTYNAELLVLLENER
+                     TLDYHDSNVKNLYEKVRNQLKNNAKEIGNGCFEFYHKCDNTCMESVKNGTYDYPKYSE
+                     EAKLNREKIDGVKLESTRIYQILAIYSTVASSLVLVVSLGAISFWMCSNGSLQCRICI
+                     "
+     sig_peptide     21..71
+                     /gene="HA"
+     mat_peptide     72..1052
+                     /gene="HA"
+                     /product="HA1"
+     mat_peptide     1053..1718
+                     /gene="HA"
+                     /product="HA2"
+ORIGIN      
+        1 ggaaaacaaa agcaacaaaa atgaaggcaa tactagtagt tctgctgtat acatttacaa
+       61 ccgcaaatgc agacacatta tgtataggtt atcatgcgaa caattcaaca gacactgtag
+      121 acacagtact agaaaagaat gtaacagtaa cacactctgt caatcttctg gaagacaagc
+      181 ataacggaaa actatgcaaa ctaagagggg tagccccatt gcatttgggt aaatgtaaca
+      241 ttgctggctg gatcctggga aatccagagt gtgaatcact ctccacagca agatcatggt
+      301 cctacattgt ggaaacatct aattcagaca atggaacgtg ttacccagga gatttcatca
+      361 attatgagga gctaagagag caattgagct cagtgtcatc atttgaaagg tttgaaatat
+      421 tccccaagac aagttcatgg cctaatcatg actcggacaa aggtgtaacg gcagcatgtc
+      481 ctcacgctgg agcaaaaagc ttctacaaaa acttgatatg gctggttaaa aaaggaaatt
+      541 catacccaaa gctcaaccaa acctacatta atgataaagg gaaagaagtc ctcgtgctgt
+      601 ggggcattca ccatccacct actattgctg accaacaaag tctctatcag aatgcagatg
+      661 catatgtttt tgtggggaca tcaagataca gcaagaagtt caagccggaa atagcaacaa
+      721 gacccaaagt gagggatcaa gaagggagaa tgaactatta ctggacacta gtagaaccgg
+      781 gagacaaaat aacattcgaa gcaactggaa atctagtggt accgagatat gcattcacaa
+      841 tggaaagaga tgctggatct ggtattatca tttcagatac accagtccac gattgcaata
+      901 caacttgtca gacacccgag ggtgctataa acaccagcct cccatttcag aatgtacatc
+      961 cgatcacaat tgggaaatgt ccaaaatatg taaaaagcac aaaattgaga ctggccacag
+     1021 gattgaggaa tgtcccgtct attcaatcta gaggcctatt cggggccatt gctggcttca
+     1081 ttgaaggggg gtggacaggg atggtagatg gatggtacgg ttatcaccat caaaatgagc
+     1141 aggggtcagg atatgcagcc gatctgaaga gcacacaaaa tgccattgat aagattacta
+     1201 acaaagtaaa ttctgttatt gaaaagatga atacacagtt cacagcagtg ggtaaagagt
+     1261 tcaaccacct tgaaaaaaga atagagaatc taaataaaaa agttgatgat ggtttcctgg
+     1321 acatttggac ttacaatgcc gaactgttgg ttctactgga aaacgaaaga actttggact
+     1381 atcacgattc aaatgtgaag aacttgtatg aaaaagtaag aaaccagtta aaaaacaatg
+     1441 ccaaggaaat tggaaacggc tgctttgaat tttaccacaa atgcgacaac acatgcatgg
+     1501 aaagtgtcaa gaatgggact tatgactacc caaaatactc agaggaagca aaattaaaca
+     1561 gagaaaaaat agatggagta aagctggaat caacaaggat ctaccagatt ttggcgatct
+     1621 attcaactgt tgccagttca ttggtactgg tagtctccct gggggcaatc agcttctgga
+     1681 tgtgctctaa tgggtctcta cagtgtagaa tatgtattta acattaggat ttcagaatca
+     1741 tgagaaaaac ac
+//
+
+LOCUS       MK763912                1701 bp    cRNA    linear   VRL 13-APR-2019
+DEFINITION  Influenza A virus (A/Texas/8214/2019(H1N1)) segment 4 hemagglutinin
+            (HA) gene, complete cds.
+ACCESSION   MK763912
+VERSION     MK763912.1
+KEYWORDS    .
+SOURCE      Influenza A virus
+  ORGANISM  Influenza A virus
+            Viruses; ssRNA viruses; ssRNA negative-strand viruses;
+            Negarnaviricota; Polyploviricotina; Insthoviricetes;
+            Articulavirales; Orthomyxoviridae; Alphainfluenzavirus.
+REFERENCE   1  (bases 1 to 1701)
+  AUTHORS   Gruner,W.E., Fries,A.C., Garrett,C.M., Powell,M.L., Minnich,D.E.,
+            Couch,M.R., Hanson,J.F., DeMarcus,L.S., Crum,M.E., Bogue,A.L.,
+            Federinko,S.P., Macias,E.A., West,C.A. and Dane,D.J.
+  TITLE     2018-2019 Influenza Surveillance among DoD Populations
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1701)
+  AUTHORS   Gruner,W.E., Fries,A.C., Garrett,C.M., Powell,M.L., Minnich,D.E.,
+            Couch,M.R., Hanson,J.F., DeMarcus,L.S., Crum,M.E., Bogue,A.L.,
+            Federinko,S.P., Macias,E.A., West,C.A. and Dane,D.J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-APR-2019) USAFSAM/PHE, United States Air Force, 2510
+            5th Street, WPAFB, OH 45433, USA
+FEATURES             Location/Qualifiers
+     source          1..1701
+                     /organism="Influenza A virus"
+                     /mol_type="viral cRNA"
+                     /strain="A/Texas/8214/2019"
+                     /serotype="H1N1"
+                     /isolation_source="nasopharyngeal swab"
+                     /host="Homo sapiens; gender M; age 36"
+                     /db_xref="taxon:11320"
+                     /segment="4"
+                     /country="USA: Texas"
+                     /collection_date="28-Jan-2019"
+                     /note="passage: Original"
+     gene            1..1701
+                     /gene="HA"
+     CDS             1..1701
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="QBX92584.1"
+                     /translation="MKAILVVLLYTFTTANADTLCIGYHANNSTDTVDTVLEKNVTVT
+                     HSVNLLEDKHNGKLCKLRGVAPLHLGKCNIAGWILGNPECESLSTARSWSYIVETSNS
+                     DNGTCYPGDFINYEELREQLSSVSSFERFEIFPKTSSWPNHDSNKGVTAACSHAGAKS
+                     FYKNLIWLVKKGNSYPKLNQTYINDKGKEILVLWGIHHPPTTADQQSLYQNADAYVFV
+                     GTSRYSKKFKPEIATRPKVRDQEGRMNYYWTLVEPGDKITFEATGNLVVPRYAFTMER
+                     NAGSGIIISDTPVHDCNTTCQTPEGAINTSLPFQNVHPITIGRCPKYVKSTKLRLATG
+                     LRNVPSIQSRGLFGAIAGFIEGGWTGMVDGWYGYHHQNEQGSGYAADLKSTQNAIDKI
+                     TNKVNSVIEKMNTQFTAVGKEFNHLEKRIENLNKKVDDGFLDIWTYNAELLVLLENER
+                     TLDYHDSNVKNLYEKVRTQLKNNAKEIGNGCFEFYHKCDNTCMESVKNGTYDYPKYSE
+                     EAKLNREKIDGVKLESTRIYQILAIYSTVASSLVLVVSLGAISFWMCSNGSLQCRICI
+                     "
+     sig_peptide     1..51
+                     /gene="HA"
+     mat_peptide     52..1032
+                     /gene="HA"
+                     /product="HA1"
+     mat_peptide     1033..1698
+                     /gene="HA"
+                     /product="HA2"
+ORIGIN      
+        1 atgaaggcaa tactagtagt tctgctgtat acatttacaa ccgcaaatgc agacacatta
+       61 tgtataggtt atcatgcgaa caattcaaca gacactgtag acacagtact agaaaagaat
+      121 gtaacggtaa cacactctgt taatcttctg gaagacaagc ataacggaaa actatgcaaa
+      181 ttaagagggg tagccccatt gcatttgggt aaatgtaaca ttgctggctg gatcctggga
+      241 aatccagagt gtgaatcact ctccacagca agatcatggt cctacattgt ggaaacatct
+      301 aattcagaca atggaacgtg ttacccagga gatttcatca attatgagga gctaagagag
+      361 caactgagct cagtgtcatc atttgaaagg tttgaaatat tccccaagac aagttcatgg
+      421 cctaatcatg actcgaacaa aggtgtaacg gcagcatgtt ctcacgctgg agcaaaaagc
+      481 ttctacaaaa acttgatatg gctggttaaa aaagggaatt catacccaaa gctcaaccaa
+      541 acctacatta atgataaagg gaaagaaatc ctcgtgctgt ggggcattca ccatccacct
+      601 actactgctg accaacaaag tctctatcag aatgcagatg catatgtttt tgtggggaca
+      661 tcaagataca gcaagaagtt caagccggaa atagcaacaa gacccaaagt gagggatcaa
+      721 gaagggagaa tgaactatta ctggacacta gtagagccgg gagacaaaat aacattcgaa
+      781 gcaactggaa atctagtggt accgagatat gcattcacaa tggaaagaaa tgctggatct
+      841 ggtattatca tttcagatac accagtccac gattgcaata caacttgtca gacacccgag
+      901 ggtgctataa acaccagcct cccatttcag aatgtacatc cgatcacaat tgggagatgt
+      961 ccaaagtatg taaaaagcac aaaattgagg ctggccacag gattgaggaa tgtcccgtct
+     1021 attcaatcta gaggcctatt cggggccatt gccggcttca ttgaaggggg gtggacaggg
+     1081 atggtagatg gatggtacgg ttatcaccat caaaatgagc aggggtcagg atatgcagcc
+     1141 gatctgaaga gcacacaaaa tgccattgat aagattacta acaaagtaaa ttctgttatt
+     1201 gaaaagatga atacacagtt cacagcagtg ggtaaagagt tcaaccacct tgaaaaaaga
+     1261 atagagaatc taaataaaaa agttgatgat ggtttcctgg acatttggac ttacaatgcc
+     1321 gaactgttgg ttctactgga aaatgaaaga actttggact atcatgattc aaatgtgaag
+     1381 aacttgtatg aaaaagtaag aacccagtta aaaaacaatg ccaaagaaat tggaaacgga
+     1441 tgctttgaat tttaccacaa atgcgataac acatgcatgg aaagtgtcaa gaatgggact
+     1501 tatgactacc caaaatactc agaggaagca aaattaaaca gagaaaaaat agatggagta
+     1561 aagctggaat caacaaggat ctaccagatt ttggcgatct attcaactgt cgccagttca
+     1621 ttggtactgg tagtctccct gggggcaatc agcttctgga tgtgctctaa tgggtctcta
+     1681 caatgtagaa tatgtattta a
+//
+
+LOCUS       MK763022                1701 bp    cRNA    linear   VRL 13-APR-2019
+DEFINITION  Influenza A virus (A/Texas/8222/2019(H1N1)) segment 4 hemagglutinin
+            (HA) gene, complete cds.
+ACCESSION   MK763022
+VERSION     MK763022.1
+KEYWORDS    .
+SOURCE      Influenza A virus
+  ORGANISM  Influenza A virus
+            Viruses; ssRNA viruses; ssRNA negative-strand viruses;
+            Negarnaviricota; Polyploviricotina; Insthoviricetes;
+            Articulavirales; Orthomyxoviridae; Alphainfluenzavirus.
+REFERENCE   1  (bases 1 to 1701)
+  AUTHORS   Gruner,W.E., Fries,A.C., Garrett,C.M., Powell,M.L., Minnich,D.E.,
+            Couch,M.R., Hanson,J.F., DeMarcus,L.S., Crum,M.E., Bogue,A.L.,
+            Federinko,S.P., Macias,E.A., West,C.A. and Dane,D.J.
+  TITLE     2018-2019 Influenza Surveillance among DoD Populations
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1701)
+  AUTHORS   Gruner,W.E., Fries,A.C., Garrett,C.M., Powell,M.L., Minnich,D.E.,
+            Couch,M.R., Hanson,J.F., DeMarcus,L.S., Crum,M.E., Bogue,A.L.,
+            Federinko,S.P., Macias,E.A., West,C.A. and Dane,D.J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-APR-2019) USAFSAM/PHE, United States Air Force, 2510
+            5th Street, WPAFB, OH 45433, USA
+FEATURES             Location/Qualifiers
+     source          1..1701
+                     /organism="Influenza A virus"
+                     /mol_type="viral cRNA"
+                     /strain="A/Texas/8222/2019"
+                     /serotype="H1N1"
+                     /isolation_source="NP SWAB"
+                     /host="Homo sapiens; gender F; age 55"
+                     /db_xref="taxon:11320"
+                     /segment="4"
+                     /country="USA: Texas"
+                     /collection_date="27-Jan-2019"
+                     /note="passage: ORIGINAL"
+     gene            1..1701
+                     /gene="HA"
+     CDS             1..1701
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="QBX91272.1"
+                     /translation="MKAILVVLLYTFTTANADTLCIGYHANNSTDTVDTVLEKNVTVT
+                     HSVNLLEDKHNGKLCKLRGVAPLHLGKCNIAGWILGNPECESLSTARSWSYIVETSNS
+                     DNGTCYPGDFINYEELREQLSSVSSFERFEIFPKTSSWPNHDSNKGVTAACPHAGAKS
+                     FYKNLIWLVKKGNSYPMLNQTYINDKGKEVLVLWGIHHPPTTADQQSLYQNADAYVFV
+                     GTSRYSKKFKPEIAKRPKVRDQEGRMNYYWTLVDPGDKITFEATGNLVVPRYAFTMER
+                     DAGSGIIISDTPVQDCNTTCQTPEGAINTSLPFQNVHPITIGKCPKYVKSTKLRLATG
+                     LRNVPSIQSRGLFGAIAGFIEGGWTGMVDGWYGYHHQNEQGSGYAADLKSTQNAIDKI
+                     TNKVNSVIEKMNTQFTAVGKEFNHLEKRIENLNKKVDDGFLDIWTYNAELLVLLENER
+                     TLDYHDSNVKNLYEKVRNQLKNNAKEIGNGCFEFYHKCDNTCMESVKNGTYDYPKYSE
+                     EAKLNREKIDGVKLESTRIYQILAIYSTAASSLVLVVSLGAISFWMCSNGSLQCRICI
+                     "
+     sig_peptide     1..51
+                     /gene="HA"
+     mat_peptide     52..1032
+                     /gene="HA"
+                     /product="HA1"
+     mat_peptide     1033..1698
+                     /gene="HA"
+                     /product="HA2"
+ORIGIN      
+        1 atgaaggcaa tactagtagt tctgctgtat acattcacaa ccgcaaatgc agacacatta
+       61 tgtataggtt atcatgcgaa caattcaaca gacactgtag acacagtact agaaaagaat
+      121 gtaacagtaa cacactctgt taatcttctg gaagacaagc ataacggaaa actatgcaaa
+      181 ctaagagggg tagccccatt gcatttgggt aaatgtaaca ttgctggctg gatcctggga
+      241 aatccagagt gtgaatcact ctccacagca agatcatggt cctacattgt ggaaacatct
+      301 aattcagaca atggaacgtg ttacccagga gatttcatca attatgagga gctaagagag
+      361 caattgagct cagtgtcatc atttgaaagg tttgaaatat tccccaagac aagttcatgg
+      421 cctaatcatg actcgaacaa aggtgtaacg gcagcatgtc cccatgctgg agcaaaaagc
+      481 ttctacaaaa acttgatatg gctggttaaa aaagggaatt catacccaat gctcaaccaa
+      541 acctacatta atgataaagg gaaagaagtc ctcgtgctgt ggggcattca ccatccacct
+      601 actactgctg accaacaaag tctctatcag aatgcagatg catatgtttt tgtgggaaca
+      661 tcaagataca gcaagaagtt caagccggaa atagcaaaaa gacccaaagt gagggatcaa
+      721 gaagggagaa tgaactatta ctggacactg gtagacccgg gagacaaaat aacattcgaa
+      781 gcaactggaa atctagtggt accgagatat gcattcacaa tggaaagaga tgctggatct
+      841 ggtattatca tttcagatac accagtccaa gattgcaata caacttgtca gacacctgag
+      901 ggtgctataa acaccagcct cccatttcag aatgtacatc cgatcacaat tgggaaatgt
+      961 ccaaagtatg taaaaagcac aaaattgaga ctggccacag gattgaggaa tgtcccgtct
+     1021 attcaatcta gaggcctatt cggggccatt gccggcttca ttgaaggggg gtggacagga
+     1081 atggtagatg gatggtacgg ttatcaccat caaaatgagc aggggtcagg atatgcagcc
+     1141 gatctgaaga gcacacaaaa tgccatcgat aagattacta acaaagtaaa ttctgttatt
+     1201 gaaaagatga atacacagtt cacagcagtg ggtaaagagt tcaaccacct tgaaaaaaga
+     1261 atagagaatc taaataaaaa agttgatgat ggtttcctgg acatttggac ttacaatgcc
+     1321 gaactgttgg ttctactgga aaacgaaaga actttggact atcacgattc aaatgtgaag
+     1381 aacttgtatg aaaaagtaag aaaccaatta aaaaacaatg ccaaggaaat tggaaacggc
+     1441 tgctttgaat tttaccacaa atgcgacaac acatgcatgg aaagtgtcaa gaatgggact
+     1501 tatgactacc caaaatactc agaggaagca aaattaaaca gagaaaaaat agatggagta
+     1561 aagctggaat caacaaggat ctaccagatt ttggcgatct attcaactgc cgccagttca
+     1621 ttggtactgg tagtctccct gggggcaatc agcttctgga tgtgctctaa tgggtctcta
+     1681 cagtgtagaa tatgtattta a
+//
+
+LOCUS       MK763021                1701 bp    cRNA    linear   VRL 13-APR-2019
+DEFINITION  Influenza A virus (A/Texas/8221/2019(H1N1)) segment 4 hemagglutinin
+            (HA) gene, complete cds.
+ACCESSION   MK763021
+VERSION     MK763021.1
+KEYWORDS    .
+SOURCE      Influenza A virus
+  ORGANISM  Influenza A virus
+            Viruses; ssRNA viruses; ssRNA negative-strand viruses;
+            Negarnaviricota; Polyploviricotina; Insthoviricetes;
+            Articulavirales; Orthomyxoviridae; Alphainfluenzavirus.
+REFERENCE   1  (bases 1 to 1701)
+  AUTHORS   Gruner,W.E., Fries,A.C., Garrett,C.M., Powell,M.L., Minnich,D.E.,
+            Couch,M.R., Hanson,J.F., DeMarcus,L.S., Crum,M.E., Bogue,A.L.,
+            Federinko,S.P., Macias,E.A., West,C.A. and Dane,D.J.
+  TITLE     2018-2019 Influenza Surveillance among DoD Populations
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1701)
+  AUTHORS   Gruner,W.E., Fries,A.C., Garrett,C.M., Powell,M.L., Minnich,D.E.,
+            Couch,M.R., Hanson,J.F., DeMarcus,L.S., Crum,M.E., Bogue,A.L.,
+            Federinko,S.P., Macias,E.A., West,C.A. and Dane,D.J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-APR-2019) USAFSAM/PHE, United States Air Force, 2510
+            5th Street, WPAFB, OH 45433, USA
+FEATURES             Location/Qualifiers
+     source          1..1701
+                     /organism="Influenza A virus"
+                     /mol_type="viral cRNA"
+                     /strain="A/Texas/8221/2019"
+                     /serotype="H1N1"
+                     /isolation_source="NP SWAB"
+                     /host="Homo sapiens; gender M; age 16"
+                     /db_xref="taxon:11320"
+                     /segment="4"
+                     /country="USA: Texas"
+                     /collection_date="27-Jan-2019"
+                     /note="passage: ORIGINAL"
+     gene            1..1701
+                     /gene="HA"
+     CDS             1..1701
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="QBX91271.1"
+                     /translation="MKAILVVLLYTFTTANADTLCIGYHANNSTDTVDTVLEKNVTVT
+                     HSVNLLEDKHNGKLCKLRGVAPLHLGKCNIAGWILGNPECESLSTARSWSYIVETSNS
+                     DNGTCYPGDFINYEELREQLSSVSSFERFEIFPKTSSWPNHDSNKGVTAACSHAGAKS
+                     FYKNLIWLVKKGNSYPKLNQTYINDKGKEILVLWGIHHPPTTADQQSLYQNADAYVFV
+                     GTSRYSKKFKPEIATRPKVRDQEGRMNYYWTLVEPGDKITFEATGNLVVPRYAFTMER
+                     NAGSGIIISNTPVHDCNTTCQTPEGAINTSLPFQNVHPITIGKCPKYVKSTKLRLATG
+                     LRNVPSIQSRGLFGAIAGFIEGGWTGMVDGWYGYHHQNEQGSGYAADLKSTQNAIDKI
+                     TNKVNSVIEKMNTQFTAVGKEFNHLEKRIENLNKKVDDGFLDIWTYNAELLVLLENER
+                     TLDYHDSNVKNLYEKVRTQLKNNAKEIGNGCFEFYHKCDNTCMESVKNGTYDYPKYSE
+                     EAKLNREKIDGVKLESTRIYQILAIYSTVASSLVLVVSLGAISFWMCSNGSLQCRICI
+                     "
+     sig_peptide     1..51
+                     /gene="HA"
+     mat_peptide     52..1032
+                     /gene="HA"
+                     /product="HA1"
+     mat_peptide     1033..1698
+                     /gene="HA"
+                     /product="HA2"
+ORIGIN      
+        1 atgaaggcaa tactagtagt tctgctgtat acatttacaa ccgcaaatgc agacacatta
+       61 tgtataggtt atcatgcgaa caattcaaca gacactgtag acacagtact agaaaagaat
+      121 gtaacggtaa cacactctgt taatcttctg gaagacaagc ataacggaaa actatgcaaa
+      181 ttaagagggg tagccccatt gcatttgggt aaatgtaaca ttgctggctg gatcctggga
+      241 aatccagagt gtgaatcact ctccacagca agatcatggt cctacattgt ggaaacatct
+      301 aattcagaca atggaacgtg ttacccagga gatttcatca attatgagga gctaagagag
+      361 caactgagct cagtgtcatc atttgaaagg tttgaaatat tccccaagac aagttcatgg
+      421 cctaatcatg actcgaacaa aggtgtaacg gcagcatgtt ctcacgctgg agcaaaaagc
+      481 ttctacaaaa acttgatatg gctggttaaa aaagggaatt catacccaaa gctcaaccaa
+      541 acctacatta atgataaagg gaaagaaatc ctcgtgctgt ggggcattca ccatccacct
+      601 actactgctg accaacaaag tctctatcag aatgcagatg catatgtttt tgtggggaca
+      661 tcaagataca gcaagaagtt caagccggaa atagcaacaa gacccaaagt gagggatcaa
+      721 gaagggagaa tgaactatta ctggacacta gtagagccgg gagacaaaat aacattcgaa
+      781 gcaactggaa atctagtggt accgagatat gcattcacaa tggaaagaaa cgctggatct
+      841 ggtattatca tttcaaatac accagtccac gattgcaata caacttgtca gacacccgag
+      901 ggtgctataa acaccagcct cccatttcag aatgtacatc cgatcacaat tgggaaatgt
+      961 ccaaagtatg taaaaagcac aaaattgagg ctggccacag gattgaggaa tgtcccgtct
+     1021 attcaatcta gaggcctatt cggggccatt gccggcttca ttgaaggggg gtggacaggg
+     1081 atggtagatg gatggtacgg ttatcaccat caaaatgagc aggggtcagg atatgcagcc
+     1141 gatctgaaga gcacacaaaa tgccattgat aagattacta acaaagtaaa ttctgttatt
+     1201 gaaaagatga atacacagtt cacagcagtg ggtaaagagt tcaaccacct tgaaaaaaga
+     1261 atagagaatc taaataaaaa agttgatgat ggtttcctgg acatttggac ttacaatgcc
+     1321 gaactgttgg ttctactgga aaatgaaaga actttggact atcatgattc aaatgtgaag
+     1381 aacttgtatg aaaaagtaag aacccagtta aaaaacaatg ccaaggaaat tggaaacgga
+     1441 tgctttgaat tttaccacaa atgcgataac acatgcatgg aaagtgtcaa gaatgggact
+     1501 tatgactacc caaaatactc agaggaagca aaattaaaca gagaaaaaat agatggagta
+     1561 aagctggaat caacaaggat ctaccagatt ttggcgatct attcaactgt cgccagttca
+     1621 ttggtactgg tagtctccct gggggcaatc agcttctgga tgtgctctaa tgggtctcta
+     1681 caatgtagaa tatgtattta a
+//
+
+LOCUS       MK763020                1701 bp    cRNA    linear   VRL 13-APR-2019
+DEFINITION  Influenza A virus (A/Texas/8219/2019(H1N1)) segment 4 hemagglutinin
+            (HA) gene, complete cds.
+ACCESSION   MK763020
+VERSION     MK763020.1
+KEYWORDS    .
+SOURCE      Influenza A virus
+  ORGANISM  Influenza A virus
+            Viruses; ssRNA viruses; ssRNA negative-strand viruses;
+            Negarnaviricota; Polyploviricotina; Insthoviricetes;
+            Articulavirales; Orthomyxoviridae; Alphainfluenzavirus.
+REFERENCE   1  (bases 1 to 1701)
+  AUTHORS   Gruner,W.E., Fries,A.C., Garrett,C.M., Powell,M.L., Minnich,D.E.,
+            Couch,M.R., Hanson,J.F., DeMarcus,L.S., Crum,M.E., Bogue,A.L.,
+            Federinko,S.P., Macias,E.A., West,C.A. and Dane,D.J.
+  TITLE     2018-2019 Influenza Surveillance among DoD Populations
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1701)
+  AUTHORS   Gruner,W.E., Fries,A.C., Garrett,C.M., Powell,M.L., Minnich,D.E.,
+            Couch,M.R., Hanson,J.F., DeMarcus,L.S., Crum,M.E., Bogue,A.L.,
+            Federinko,S.P., Macias,E.A., West,C.A. and Dane,D.J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-APR-2019) USAFSAM/PHE, United States Air Force, 2510
+            5th Street, WPAFB, OH 45433, USA
+FEATURES             Location/Qualifiers
+     source          1..1701
+                     /organism="Influenza A virus"
+                     /mol_type="viral cRNA"
+                     /strain="A/Texas/8219/2019"
+                     /serotype="H1N1"
+                     /isolation_source="NP SWAB"
+                     /host="Homo sapiens; gender M; age 3"
+                     /db_xref="taxon:11320"
+                     /segment="4"
+                     /country="USA: Texas"
+                     /collection_date="27-Jan-2019"
+                     /note="passage: ORIGINAL"
+     gene            1..1701
+                     /gene="HA"
+     CDS             1..1701
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="QBX91270.1"
+                     /translation="MKAILVVLLYTFTTANADTLCIGYHANNSTDTVDTVLEKNVTVT
+                     HSVNLLEDKHNGKLCKLRGVAPLHLGKCNIAGWILGNPECESLSTARSWSYIVETSNS
+                     DNGTCYPGDFINYEELREQLSSVSSFERFEIFPKTSSWPNHDSDKGVTAACPHAGAKS
+                     FYKNLIWLVKKGNSYPKLNQTYINDKGKEVLVLWGIHHPPTIADQQSLYQNADAYVFV
+                     GTSRYSKKFKPEIATRPKVRDQEGRMNYYWTLVEPGDKITFEATGNLVVPRYAFTMER
+                     DAGSGIIISDTPVHDCNTTCQTPEGAINTSLPFQNVHPITIGKCPKYVKSTKLRLATG
+                     LRNVPSIQSRGLFGAIAGFIEGGWTGMVDGWYGYHHQNEQGSGYAADLKSTQNAIDKI
+                     TNKVNSVIEKMNTQFTAVGKEFNHLEKRIENLNKKVDDGFLDIWTYNAELLVLLENER
+                     TLDYHDSNVKNLYEKVRNQLKNNAKEIGNGCFEFYHKCDNTCMESVKNGTYDYPKYSE
+                     EAKLNREKIDGVKLESKRIYQILAIYSTVASSLVLVVSLGAISFWMCSNGSLQCRICI
+                     "
+     sig_peptide     1..51
+                     /gene="HA"
+     mat_peptide     52..1032
+                     /gene="HA"
+                     /product="HA1"
+     mat_peptide     1033..1698
+                     /gene="HA"
+                     /product="HA2"
+ORIGIN      
+        1 atgaaggcaa tactagtagt tctgctgtat acatttacaa ccgcaaatgc agacacatta
+       61 tgtataggtt atcatgcgaa caattcaaca gacactgtag acacagtact agaaaagaat
+      121 gtaacagtaa cacactctgt caatcttctg gaagacaagc ataacggaaa actatgcaaa
+      181 ctaagagggg tagccccatt gcatttgggt aaatgtaaca ttgctggctg gatcctggga
+      241 aatccagagt gtgaatcact ctccacagca agatcatggt cctacattgt ggaaacatct
+      301 aattcagaca atggaacgtg ttacccagga gatttcatca attatgagga gctaagagag
+      361 caattgagct cagtgtcatc atttgaaagg tttgaaatat tccccaagac aagttcatgg
+      421 cctaatcatg actcggacaa aggtgtaacg gcagcatgtc ctcacgctgg agcaaaaagc
+      481 ttctacaaga acttgatatg gctggttaag aaaggaaatt catacccaaa gctcaaccaa
+      541 acctacatta atgataaagg gaaagaagtc ctcgtgctgt ggggcattca ccatccacct
+      601 actattgctg accaacaaag tctctatcag aatgcagatg catatgtttt tgtggggaca
+      661 tcaagataca gcaagaagtt caagccggaa atagcaacaa gacccaaagt gagggatcaa
+      721 gaagggagaa tgaactatta ctggacacta gtagaaccgg gagacaaaat aacattcgaa
+      781 gcaactggaa atctagtggt accgagatat gcattcacaa tggaaagaga tgctggatct
+      841 ggtattatca tttcagatac accagtccac gattgcaata caacttgtca gacacccgag
+      901 ggtgctataa acaccagcct cccatttcag aatgtacatc cgatcacaat tgggaaatgt
+      961 ccaaagtatg taaaaagcac aaaattgaga ctggccacag gattgaggaa tgtcccgtct
+     1021 attcaatcta gaggcctatt cggggccatt gctggcttca ttgaaggggg gtggacaggg
+     1081 atggtagatg gatggtacgg ttatcaccat caaaatgagc aggggtcagg atatgcagcc
+     1141 gatctgaaga gcacacaaaa tgccattgat aagattacta acaaagtaaa ttctgttatt
+     1201 gaaaagatga atacacagtt cacagcagtg ggtaaagagt tcaaccacct tgaaaaaaga
+     1261 atagagaatc taaataaaaa agttgatgat ggtttcctgg acatttggac ttacaatgcc
+     1321 gaactgttgg ttctactgga aaacgaaaga actttggact atcacgattc aaatgtgaag
+     1381 aacttgtatg aaaaagtaag aaaccagtta aaaaacaatg ccaaggaaat tggaaacggc
+     1441 tgctttgaat tttaccacaa atgcgacaac acatgcatgg aaagtgtcaa gaatgggact
+     1501 tatgactacc caaaatactc agaggaagca aaattaaaca gagaaaaaat agatggagta
+     1561 aagctggaat caaaaaggat ctaccagatt ttggcgatct attcaactgt tgccagttca
+     1621 ttggtactgg tagtctccct gggggcaatc agcttctgga tgtgctctaa tgggtctcta
+     1681 cagtgtagaa tatgtattta a
+//
+

@@ -11792,7 +11792,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># You will need re to solve this problem</span>
@@ -11802,11 +11802,14 @@ div#notebook {
 <span class="n">test_string2</span> <span class="o">=</span> <span class="s2">&quot;https://twitter.com/dariyasydykova&quot;</span>
 
 <span class="c1"># Your code goes here</span>
-<span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;https://(.*).com&quot;</span><span class="p">,</span><span class="n">test_string1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The website name is&quot;</span><span class="p">,</span><span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="k">def</span> <span class="nf">website</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+    <span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;https://(.*).com&quot;</span><span class="p">,</span><span class="n">string</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The website name is&quot;</span><span class="p">,</span><span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
 
-<span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;https://(.*).com&quot;</span><span class="p">,</span><span class="n">test_string2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The website name is&quot;</span><span class="p">,</span><span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+    
+<span class="n">website</span><span class="p">(</span><span class="n">test_string1</span><span class="p">)</span>    
+
+<span class="n">website</span><span class="p">(</span><span class="n">test_string2</span><span class="p">)</span>    
 </pre></div>
 
 </div>
@@ -11890,20 +11893,15 @@ The website name is twitter
 <span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">input_handle</span><span class="p">,</span><span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
 <span class="n">input_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
-<span class="n">tRNA_count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">rRNA_count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">RNA_count</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s2">&quot;CDS&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="s2">&quot;product&quot;</span> <span class="ow">in</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">:</span>
-            <span class="n">match_trna</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;tRNA&quot;</span><span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;product&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
-            <span class="n">match_rrna</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;rRNA&quot;</span><span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;product&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
-            <span class="k">if</span> <span class="n">match_trna</span><span class="p">:</span>
-                <span class="n">tRNA_count</span><span class="o">+=</span><span class="mi">1</span>
-            <span class="k">if</span> <span class="n">match_rrna</span><span class="p">:</span>
-                <span class="n">rRNA_count</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="c1">#print(feature.type)</span>
+    <span class="n">match_rna</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;(t|r)RNA&quot;</span><span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">feature</span><span class="o">.</span><span class="n">type</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">match_rna</span><span class="p">:</span>
+        <span class="n">RNA_count</span><span class="o">+=</span><span class="mi">1</span>
         
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number of tRNAs and rRNAs contained within are&quot;</span><span class="p">,</span><span class="n">tRNA_count</span><span class="p">,</span><span class="s2">&quot;and&quot;</span><span class="p">,</span><span class="n">rRNA_count</span><span class="p">,</span><span class="s2">&quot;respectively&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number of tRNAs and rRNAs contained within are&quot;</span><span class="p">,</span><span class="n">RNA_count</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11920,7 +11918,7 @@ The website name is twitter
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The number of tRNAs and rRNAs contained within are 62 and 27 respectively
+<pre>The number of tRNAs and rRNAs contained within are 109
 </pre>
 </div>
 </div>
